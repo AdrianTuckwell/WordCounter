@@ -5,6 +5,6 @@ package com.codeclan.example.wordcounter;
  */
 
 public interface Countable {
-        int getCount();
+        Integer getCount(String phrase);
 }
 

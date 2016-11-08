@@ -6,8 +6,8 @@ package com.codeclan.example.wordcounter;
 
 public class Counter implements Countable {
 
-    public int getCount() {
-        return 1;
+    public Integer getCount(String phrase) {
+        return phrase.split("\\s+").length;
     }
 
 }

@@ -34,9 +34,12 @@ public class WordCount extends AppCompatActivity {
                 String phrase = mPhraseText.getText().toString();
                 Log.d("WordCount", "The phrase entered: " + phrase);
 
-                Counter count = new Counter();
-                int word_count = count.getCount();
-                mCountText.setText(word_count);
+                Counter counter = new Counter();
+                Integer count = counter.getCount(phrase);
+
+                mCountText = (TextView)findViewById(R.id.result);
+
+                mCountText.setText(count.toString());
             }
 
         });
