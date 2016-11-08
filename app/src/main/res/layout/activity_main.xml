@@ -10,8 +10,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.codeclan.example.wordcounter.MainActivity">
 
-    <TextView
+
+    <EditText
+        android:id="@+id/phrase_text"
+        android:hint="@string/phrase"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:fontFamily="casual"
+        />
+
+    <Button
+        android:id="@+id/result_button"
+        android:text="@string/result"
+        android:textSize="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:layout_alignLeft="@+id/phrase_text"
+        android:layout_alignStart="@+id/phrase_text" />
+
+
 </RelativeLayout>
